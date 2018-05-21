@@ -7,7 +7,7 @@
   <arg name="kinect_enabled" default="$(optenv HUSKY_KINECT_ENABLED false)"/>
   <arg name="urdf_extras" default="$(optenv HUSKY_URDF_EXTRAS)"/>
 
-  <param name="robot_description" command="$(find xacro)/xacro '$(find husky_description)/urdf/husky_lidar_1.urdf.xacro'
+  <param name="robot_description" command="$(find xacro)/xacro '$(find husky_description)/urdf/husky_lidar_multi.urdf.xacro'
     --inorder
     robot_namespace:=$(arg robot_namespace)
     laser_enabled:=$(arg laser_enabled)
