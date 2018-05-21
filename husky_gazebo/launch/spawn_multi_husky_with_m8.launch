@@ -29,8 +29,8 @@
         <arg name="urdf_extras" value="$(arg urdf_extras)"/>
         <arg name="robot_namespace" value="$(arg robot_namespace)"/>
         <arg name="x" value="$(arg x)"/>
-        <arg name="y" value="$(arg y)/>
-        <arg name="yaw" value="$(arg yaw)/>
+        <arg name="y" value="$(arg y)"/>
+        <arg name="yaw" value="$(arg yaw)"/>
         
       </include>
 
