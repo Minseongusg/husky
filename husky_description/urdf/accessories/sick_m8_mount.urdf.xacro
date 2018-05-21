@@ -3,7 +3,7 @@
 
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
 
-  <xacro:include filename="$(find lms1xx)/urdf/sick_m8.urdf.xacro" />
+  <xacro:include filename="$(find husky_description)/urdf/sick_m8.urdf.xacro" />
 
   <xacro:macro name="sick_m8_mount" params="prefix">
 
