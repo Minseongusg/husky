@@ -4,6 +4,8 @@ recovery_behaviour_enabled: true
 NavfnROS:
   allow_unknown: true # Specifies whether or not to allow navfn to create plans that traverse unknown space.
   default_tolerance: 0.1 # A tolerance on the goal point for the planner.
+  visualize_potential: true
+  use_dijkstra: false
 
 TrajectoryPlannerROS:
   # Robot Configuration Parameters
