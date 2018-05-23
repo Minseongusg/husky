@@ -30,8 +30,6 @@ Software License Agreement (BSD)
   <xacro:include filename="$(find husky_description)/urdf/accessories/sick_m8_mount.urdf.xacro"/>
   <xacro:include filename="$(find husky_description)/urdf/accessories/sensor_arch.urdf.xacro"/>
 
-  <xacro:property name="M_PI" value="3.14159"/>
-
   <!-- Base Size -->
   <xacro:property name="base_x_size" value="0.98740000" />
   <xacro:property name="base_y_size" value="0.57090000" />
@@ -126,7 +124,7 @@ Software License Agreement (BSD)
 
     <sick_m8_mount prefix="$(arg tf_prefix)/base"/>
 
-    <sick_m8 frame="$(arg tf_prefix)/base_laser" topic="scan"/>
+    <sick_m8 frame="$(arg tf_prefix)/base_laser" topic="m8_husky_lidar" robot_namespace="$(arg robot_namespace)"/>
 
     <joint name="$(arg tf_prefix)/laser_mount_joint" type="fixed">
       <origin xyz="$(arg laser_xyz)" rpy="$(arg laser_rpy)" />
